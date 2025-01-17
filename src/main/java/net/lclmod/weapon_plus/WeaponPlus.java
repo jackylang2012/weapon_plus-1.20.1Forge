@@ -1,4 +1,4 @@
-package net.lclmod.temporalrift;
+package net.lclmod.weapon_plus;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -14,12 +14,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(TemporalRift.MOD_ID)
-public class TemporalRift {
+@Mod(WeaponPlus.MOD_ID)
+public class WeaponPlus {
     public static final String MOD_ID = "temporal_rift";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public TemporalRift() {
+    public WeaponPlus() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
