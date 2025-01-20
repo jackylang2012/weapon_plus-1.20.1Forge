@@ -1,6 +1,7 @@
 package net.lclmod.weapon_plus;
 
 import com.mojang.logging.LogUtils;
+import net.lclmod.weapon_plus.item.BlazeSword;
 import net.lclmod.weapon_plus.item.ModCreativeModTabs;
 import net.lclmod.weapon_plus.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -33,6 +34,8 @@ public class WeaponPlus {
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+        // 注册 BlazeSword 的事件处理器
+        BlazeSword.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -41,7 +44,7 @@ public class WeaponPlus {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.FIRE_SWORD);
+            event.accept(ModItems.BlAZE_SWORD);
         }
     }
 

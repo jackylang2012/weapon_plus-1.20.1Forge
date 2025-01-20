@@ -15,12 +15,12 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, WeaponPlus.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> WEAPON_PLUS_TAB = CREATIVE_MODE_TABS.register("weapon_plus_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.FIRE_SWORD.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BlAZE_SWORD.get()))
                     .title(Component.translatable("creativetab.weapon_plus_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
 
-                        pOutput.accept(Items.DIAMOND);
+                        pOutput.accept(ModItems.BlAZE_SWORD.get());
 
 
                     })

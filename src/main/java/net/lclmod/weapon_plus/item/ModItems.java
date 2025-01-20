@@ -11,8 +11,8 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, WeaponPlus.MOD_ID);
 
-    public static final RegistryObject<Item> FIRE_SWORD = ITEMS.register("fire_sword",
-            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BlAZE_SWORD = ITEMS.register("blaze_sword",
+            () -> new BlazeSword());
 
 
 
