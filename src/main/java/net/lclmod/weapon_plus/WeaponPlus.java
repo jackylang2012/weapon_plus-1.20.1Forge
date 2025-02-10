@@ -1,10 +1,13 @@
 package net.lclmod.weapon_plus;
 
 import com.mojang.logging.LogUtils;
+import net.lclmod.weapon_plus.entity.ModEntities;
 import net.lclmod.weapon_plus.item.BlazeSword;
 import net.lclmod.weapon_plus.item.ModCreativeModTabs;
 import net.lclmod.weapon_plus.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.lclmod.weapon_plus.client.render.IceBallRenderer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -30,6 +33,8 @@ public class WeaponPlus {
 
         ModItems.register(modEventBus);
 
+        ModEntities.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -43,9 +48,7 @@ public class WeaponPlus {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.BlAZE_SWORD);
-        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -59,6 +62,9 @@ public class WeaponPlus {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            // 注册 IceBall 实体的渲染器
+            EntityRenderers.register(ModEntities.ICE_BALL.get(), IceBallRenderer::new);
+            LOGGER.info("Client setup for mod {}", MOD_ID);
 
         }
     }

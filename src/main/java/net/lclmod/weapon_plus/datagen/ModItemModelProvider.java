@@ -17,7 +17,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.BlAZE_SWORD);
+        simpleItem(ModItems.BLAZE_SWORD);
+        simpleItem(ModItems.ICE_BALL);
+        simpleItem(ModItems.ICE_SWORD);
+        simpleItem(ModItems.GOLDEN_LUCK_SWORD);
 
     }
 
