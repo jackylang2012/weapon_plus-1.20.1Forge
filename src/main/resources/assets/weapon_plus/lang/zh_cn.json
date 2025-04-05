@@ -3,5 +3,18 @@
   "item.weapon_plus.blaze_sword": "烈焰之刃",
   "item.weapon_plus.ice_ball": "冰爆弹",
   "item.weapon_plus.ice_sword": "永冻圣剑",
-  "item.weapon_plus.golden_luck_sword": "荣耀之刃"
+  "item.weapon_plus.golden_luck_sword": "荣耀之刃",
+  "item.weapon_plus.blood_sword": "鲜血匕首",
+  "item.weapon_plus.blood_sword.vampiric_strike": "§c吸血发动！恢复生命值",
+  "item.weapon_plus.blood_sword.blood_rage_activate": "§4血之怒激活！攻击力提升50%",
+  "item.weapon_plus.blood_sword.blood_sacrifice_activate": "§4血祭发动！攻击力翻倍，持续10秒",
+  "item.weapon_plus.blood_sword.blood_explosion": "§4血腥爆炸！周围敌人受到伤害并恢复生命值",
+  "item.weapon_plus.golden_luck_sword.gold_drop": "§6黄金之力！获得额外掉落物",
+  "item.weapon_plus.golden_luck_sword.item_exchange": "§a物品交换成功！冷却时间：§e5秒",
+  "item.weapon_plus.golden_luck_sword.need_gold": "§c需要至少一个金锭！",
+  "item.weapon_plus.golden_luck_sword.luck_effect": "§b幸运效果生效中！",
+  "item.weapon_plus.blaze_sword.set_on_fire": "§6目标已被点燃！",
+  "item.weapon_plus.blaze_sword.fireball_launch": "§6火球已发射！",
+  "item.weapon_plus.blaze_sword.fireball_cooldown": "§c火球冷却中！剩余 §e%s秒",
+  "item.weapon_plus.blaze_sword.fire_resistance": "§6获得火焰抗性效果！"
 }

@@ -1,4 +1,4 @@
-package net.lclmod.weapon_plus.item;
+package net.lclmod.weapon_plus.item.custom;
 
 import net.lclmod.weapon_plus.entity.custom.IceBallEntity;
 import net.lclmod.weapon_plus.entity.ModEntities;

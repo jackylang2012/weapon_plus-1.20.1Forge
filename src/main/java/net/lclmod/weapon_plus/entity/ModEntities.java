@@ -20,7 +20,8 @@ public class ModEntities {
                     .sized(0.5F, 0.5F) // 实体大小
                     .clientTrackingRange(8)
                     .updateInterval(10)
-                    .build(WeaponPlus.MOD_ID + ":ice_ball"));
+                    .build(":ice_ball"));
+
 
     // 注册实体方法
     public static void register(IEventBus eventBus) {

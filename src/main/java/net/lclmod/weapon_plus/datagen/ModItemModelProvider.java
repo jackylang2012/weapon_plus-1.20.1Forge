@@ -21,6 +21,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ICE_BALL);
         simpleItem(ModItems.ICE_SWORD);
         simpleItem(ModItems.GOLDEN_LUCK_SWORD);
+        simpleItem(ModItems.BLOOD_SWORD);
+        simpleItem(ModItems.EARTH_SWORD);
 
     }
 

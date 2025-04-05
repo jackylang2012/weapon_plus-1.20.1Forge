@@ -3,5 +3,18 @@
   "item.weapon_plus.blaze_sword": "Blaze Sword",
   "item.weapon_plus.ice_ball": "Ice Ball",
   "item.weapon_plus.ice_sword": "Ice Sword",
-  "item.weapon_plus.golden_luck_sword": "Golden Luck Sword"
+  "item.weapon_plus.golden_luck_sword": "Golden Luck Sword",
+  "item.weapon_plus.blood_sword": "Blood Sword",
+  "item.weapon_plus.blood_sword.vampiric_strike": "§cVampiric Strike! Health restored",
+  "item.weapon_plus.blood_sword.blood_rage_activate": "§4Blood Rage Activated! Attack increased by 50%",
+  "item.weapon_plus.blood_sword.blood_sacrifice_activate": "§4Blood Sacrifice Activated! Attack doubled for 10 seconds",
+  "item.weapon_plus.blood_sword.blood_explosion": "§4Blood Explosion! Damaged enemies and restored health",
+  "item.weapon_plus.golden_luck_sword.gold_drop": "§6Golden Power! Extra drops acquired",
+  "item.weapon_plus.golden_luck_sword.item_exchange": "§aExchange successful! Cooldown: §e5s",
+  "item.weapon_plus.golden_luck_sword.need_gold": "§cRequires at least one gold ingot!",
+  "item.weapon_plus.golden_luck_sword.luck_effect": "§bLuck effect active!",
+  "item.weapon_plus.blaze_sword.set_on_fire": "§6Target set on fire!",
+  "item.weapon_plus.blaze_sword.fireball_launch": "§6Fireball launched!",
+  "item.weapon_plus.blaze_sword.fireball_cooldown": "§cFireball on cooldown! §e%s§c seconds remaining",
+  "item.weapon_plus.blaze_sword.fire_resistance": "§6Fire Resistance effect applied!"
 }

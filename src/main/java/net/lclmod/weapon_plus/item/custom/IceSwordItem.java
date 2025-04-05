@@ -1,6 +1,5 @@
-package net.lclmod.weapon_plus.item;
+package net.lclmod.weapon_plus.item.custom;
 
-import net.lclmod.weapon_plus.WeaponPlus;
 import net.lclmod.weapon_plus.entity.custom.IceBallEntity;
 import net.lclmod.weapon_plus.entity.ModEntities;
 import net.minecraft.client.gui.screens.Screen;
@@ -9,14 +8,11 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraft.network.chat.Component;
 
 import javax.annotation.Nullable;
@@ -39,7 +35,7 @@ public class IceSwordItem extends SwordItem {
         if (Screen.hasShiftDown()) {
             // 按下 Shift 时显示的详细提示
             tooltip.add(Component.literal("§7- 右键发射一个超级冰球"));
-            tooltip.add(Component.literal("§7- 持有者获得水下呼吸，伤害吸收，海豚的恩惠"));
+            tooltip.add(Component.literal("§7- 持有者获得水下呼吸，抗性提升，海豚的恩惠"));
         } else {
             // 未按下 Shift 时显示的提示
             tooltip.add(Component.literal("§7按下 §eShift §7查看详细信息"));
@@ -79,7 +75,7 @@ public class IceSwordItem extends SwordItem {
             if (hasItem) {
                 player.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0, true, false));
                 player.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0, true, false));
-                player.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 40, 1, true, false));
+                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false));
             }
         }
         super.inventoryTick(stack, level, entity, slot, isSelected);

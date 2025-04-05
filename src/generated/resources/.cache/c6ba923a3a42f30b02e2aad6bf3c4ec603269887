@@ -1,5 +1,7 @@
-// 1.20.1	2025-02-07T20:36:38.1372355	Item Models: weapon_plus
+// 1.20.1	2025-03-09T20:46:06.635901	Item Models: weapon_plus
 f98635b004d348208dbc33b94786442e6f673ff5 assets/weapon_plus/models/item/blaze_sword.json
+4c1200f2465fce941c6eb57349b0b1c2899c30c0 assets/weapon_plus/models/item/blood_sword.json
+7ecffa28ab40547935844065179c92ac8bb264a4 assets/weapon_plus/models/item/earth_sword.json
 9736974c5fdf90ab50f6cc5874102b8b10e4e8a4 assets/weapon_plus/models/item/golden_luck_sword.json
 e887df424d57343b2ab9b2c192ff8c19cecb7291 assets/weapon_plus/models/item/ice_ball.json
 26644db00db93897fafeb323feaf1e2921580ef8 assets/weapon_plus/models/item/ice_sword.json

@@ -1,11 +1,11 @@
 package net.lclmod.weapon_plus.item;
 
 import net.lclmod.weapon_plus.WeaponPlus;
-import net.lclmod.weapon_plus.client.render.IceBallRenderer;
-import net.lclmod.weapon_plus.entity.custom.IceBallEntity;
+import net.lclmod.weapon_plus.item.custom.*;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -32,6 +32,11 @@ public class ModItems {
             IceSwordItem::new);
     public static final RegistryObject<Item> GOLDEN_LUCK_SWORD = ITEMS.register("golden_luck_sword",
             () -> new GoldenLuckSwordItem());
+    public static final RegistryObject<Item> BLOOD_SWORD = ITEMS.register("blood_sword",
+            () -> new BloodSword(Tiers.NETHERITE, 5, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> EARTH_SWORD = ITEMS.register("earth_sword",
+            () -> new EarthSwordItem(Tiers.NETHERITE, 7, -2.4F, new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
+
 
     // 注册所有内容
     public static void register(IEventBus eventBus) {

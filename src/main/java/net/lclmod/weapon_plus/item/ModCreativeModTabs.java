@@ -25,6 +25,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.ICE_BALL.get());
                         pOutput.accept(ModItems.ICE_SWORD.get());
                         pOutput.accept(ModItems.GOLDEN_LUCK_SWORD.get());
+                        pOutput.accept(ModItems.BLOOD_SWORD.get());
+                        pOutput.accept(ModItems.EARTH_SWORD.get());
 
 
                     })
